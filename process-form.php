@@ -16,7 +16,7 @@
 
   if($responseKeys["success"]) {
     // Send the email
-    $to = "youremail@example.com";
+    $to = "rajasekharbagathi0587@gmail.com";
     $subject = "New contact form submission";
     $body = "Name: $name\nEmail: $email\nMessage: $message";
     $headers = "From: $email\n";
