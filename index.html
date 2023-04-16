@@ -428,15 +428,11 @@ btn.addEventListener('click', function(e){
     var message = document.getElementById('message').value;
     var body = 'name: ' +name + '<br/> mail:' +email + '<br/> Subject' + subject + '<br/> message' +message;
     Email.send({
-    Host : "smtp.elasticemail.com",
-    Username : "rajasekharbagathi0587@gmail.com",
-    Password : "34F004AAA466A8FA0AEB2A7169E6072D9CD9",
-    To : 'rajasekharbagathi0587@gmail.com',
-    From : email,
-    Subject : subject,
-    Body : body
-}).then(
-  message => alert(message)
-);
+        secureToken: "f47f656c-5dbc-4cda-b46f-bed04462b82b",
+        To : 'rajasekharbagathi0587@gmail.com',
+        From : email,
+        Subject : subject,
+        Body : body
+    }).then(message => alert(message));
 })</script>
 </html>
